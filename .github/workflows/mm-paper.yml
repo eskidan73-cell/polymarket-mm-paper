@@ -1,0 +1,36 @@
+name: MM Paper
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mm-paper
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - run: python mm_paper.py
+
+      - name: Commit and push state
+        run: |
+          git config user.name "mm-paper-bot"
+          git config user.email "mm-paper-bot@users.noreply.github.com"
+          git add mm_state.json mm_log.jsonl
+          git diff --cached --quiet || git commit -m "update mm paper state"
+          git pull --rebase origin main
+          git push
