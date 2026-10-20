@@ -1,6 +1,6 @@
 {
  "started": "2026-10-18T08:28:48.952738+00:00",
- "last_ts": 1792451067,
+ "last_ts": 1792460771,
  "markets": {
   "0x38d57dc9da5dfbc8e1cc1d03a08edac1918452e7509397bf83c5811dc4d2e5cd": {
    "cid": "0x38d57dc9da5dfbc8e1cc1d03a08edac1918452e7509397bf83c5811dc4d2e5cd",
@@ -131,10 +131,10 @@
      "fills": 10
     }
    },
-   "mid": 0.6995,
+   "mid": 0.7355,
    "pnl": {
-    "strict": -7.7242,
-    "touch": -8.8242
+    "strict": -20.0657,
+    "touch": -21.1658
    }
   },
   "0xa34edb6c898232378a9cc08744842df2cd89d278ba45b012bed3ac10c7241c4d": {
@@ -146,22 +146,22 @@
    "v24": 71613.32534600001,
    "acct": {
     "strict": {
-     "cash": -35.8,
-     "inv": 150.0,
-     "fee_eq": 2.35542,
-     "fills": 5
+     "cash": -37.72,
+     "inv": 160.0,
+     "fee_eq": 2.432988,
+     "fills": 6
     },
     "touch": {
-     "cash": -35.8,
-     "inv": 150.0,
-     "fee_eq": 2.35542,
-     "fills": 5
+     "cash": -45.01984,
+     "inv": 198.02,
+     "fee_eq": 2.727901536,
+     "fills": 6
     }
    },
-   "mid": 0.2015,
+   "mid": 0.1905,
    "pnl": {
-    "strict": -5.575,
-    "touch": -5.575
+    "strict": -7.24,
+    "touch": -7.297
    }
   }
  }
